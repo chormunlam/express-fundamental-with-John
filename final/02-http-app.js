@@ -1,5 +1,5 @@
-const http = require('http')
-const { readFileSync } = require('fs')
+const http = require('http')//build it 
+const { readFileSync } = require('fs')//we r not invoke it yet
 
 // get all files
 const homePage = readFileSync('./navbar-app/index.html')
@@ -50,3 +50,20 @@ const server = http.createServer((req, res) => {
 })
 
 server.listen(5000)
+
+//alwasy has response in server
+/**
+ response.end([data[,encoding]][,callback])  wth is this...
+
+ this matter:
+ res.writeHead(200,{'content-type':'text/html'})
+ res.writeHead(200,{'content-type':'text/plain'})
+ 
+ */
+/*
+GET
+/
+GET
+/favicon.ico
+why alway give me double return...get get
+*/
