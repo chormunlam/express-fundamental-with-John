@@ -13,7 +13,7 @@ const homeLogic = readFileSync('./navbar-app/browser-app.js')
 
 const server =http.createServer((req, res)=>{
 const url =req.url
-console.log(url);
+console.log(url)
 //home page
 if(url ==='/'){
   //console.log(req.method)
